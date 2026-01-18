@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import About from "@/views/About.vue";
 import Home from "@/views/Home.vue";
 import Categories from "@/views/Categories.vue";
+import Items from "@/views/Items.vue";
 
 const routes = [
   {
@@ -18,6 +19,11 @@ const routes = [
     path: '/categories',
     name: 'Categories',
     component: Categories
+  },
+  {
+    path: '/items/:categoryId',
+    name: 'items',
+    component: Items
   }
 ]
 
@@ -28,3 +34,4 @@ const router = createRouter({
 })
 
 export default router
+

@@ -1,19 +1,25 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-
+  <div class="home">
+    <img class="home-logo" alt="stockUp logo" src="../assets/logo.png">
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
+  name: 'HomeView'
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.home-logo {
+  width: 220px;     /* adjust size */
+  height: auto;
+}
 </style>
